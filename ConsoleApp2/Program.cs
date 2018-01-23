@@ -11,9 +11,15 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             Random num = new Random();
+            int min;
+            int max;
+            Console.WriteLine("What would you like the smallest possible number to be?");
+            min = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What would you like the largest possible number to be?");
+            max = Convert.ToInt32(Console.ReadLine());
             int Counter = 1;
             int UserGuess = -1;
-            int NumToGuess = num.Next(min, max);
+            int NumToGuess = num.Next(0, 100);
             while (UserGuess != NumToGuess)
             {
                 Console.WriteLine("Guess a number.");
