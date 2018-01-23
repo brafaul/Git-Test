@@ -17,7 +17,7 @@ namespace ConsoleApp2
             min = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What would you like the largest possible number to be?");
             max = Convert.ToInt32(Console.ReadLine());
-            int Counter = 0;
+            int Counter = 1;
             int UserGuess = -1;
             int NumToGuess = num.Next(0, 100);
             while (UserGuess != NumToGuess)
